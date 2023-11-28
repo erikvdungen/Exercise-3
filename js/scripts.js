@@ -26,6 +26,7 @@ $("#Mad").on("click", function () {
     $("#Mad").css("font-family", "Bebas Neue"); // Add this line to change the font
     $(this).unbind("click");
     $("#Mad .opener").show();
+    $("#Mad").css("transform", "scale(1.25)");
 })
 
 $("#Shy").on("click", function () {
@@ -36,10 +37,11 @@ $("#Shy").on("click", function () {
     $("#Shy").css("font-family", "Saira Extra Condensed");
     $(this).unbind("click");
     $("#Shy .opener").show();
+    $("#Shy").css("transform", "scale(0.5)");
 })
 
 $("#Confused").on("click", function () {
-    $("#Confused").append("<h2>Confused</h2>");
+    $("#Confused").html("<h2>Confused</h2>");
     $("#Confused").css("background-color", "magenta");
     $("#Confused").css("color", "white");
     $("#Confused").css("text-shadow", "1px 1px 2px rgba(0,0,0,0.5)");
@@ -48,5 +50,5 @@ $("#Confused").on("click", function () {
     $("#Confused .opener").show();
 })
 
-$(".box").prepend('<span class="material-symbols-outlined opener">expand_content</span>')
+
 $(".opener").hide();
